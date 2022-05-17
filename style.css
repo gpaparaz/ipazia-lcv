@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:ital@0;1&family=Spectral+SC:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,500;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(0, 0, 0);
+    color: #fff6e3;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    line-height: 150%;
+}
+/*
+ * TIPOGRAFIA
+ */
+
+h1 {
+    font-family: 'Spectral SC',serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 61px;
+    letter-spacing: 0.02em;
+}
+
+h2 {
+    font-family: 'Kaisei Tokumin', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 55px;
+    color: #3B85A4;
+}
+
+h3 {
+    font-family: 'Kaisei Tokumin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 50px;
+    margin-top: 10px;
+    color: #3B85A4;
+}
+
+h4 {
+    font-family: 'Spectral SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+h5 {
+    font-family: 'Spectral SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+a {
+    text-decoration-line: underline;
+    color: #fff6e3;
+}
+
+a:hover {
+    color: #F9E1B6;
+}
+
+/*
+ * Classi base
+ */
+
+section {
+    padding: 50px 15%;
+    overflow: auto;
+}
+
+.light-background {
+    background-color: #fff6e3;
+    color: #000000;
+}
+
+.col {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-2 {
+    width: 48%;
+}
+
+.col-1 {
+    width: 100%;
+}
+
+.col-3 {
+    width: 33.33%;
+}
+
+.col-1-of-2 {
+    width: 30%;
+}
+
+.col-2-of-2 {
+    width: 70%;
+}
+
+.quote-block {
+    margin-bottom: 30px !important;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.divider
+{
+	position: relative;
+	margin-bottom: 50px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(31, 80, 179), transparent);
+}
+
+.div-dot:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -9px;
+	left: calc(50% - 9px);
+	width: 18px;
+	height: 18px;
+	background-color: #3B85A4;
+	border: 1px solid rgb(48,49,51);
+	border-radius: 50%;
+}
+
+.quote {
+    text-align: center;
+}
+
+.col-3 h5 {
+    margin-bottom: 25px;
+}
+
+.btn-primary {
+    text-decoration: none;
+    background-color: #fff6e3;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    color: #000000;
+    border-radius: 3px;
+}
+
+.btn-primary:hover {
+    color: #000000;
+    background-color: #F9E1B6;
+}
+
+/*
+ ************* HEADER
+ */
+
+/* .menu-section {
+    padding:calc(1em + 2px);
+    width:100vw;
+} */
+
+nav {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: #fff6e3 2px solid;
+
+    /* overflow:hidden;
+    scroll-behavior:smooth; */
+}
+
+.title{
+    margin-left: 10%;
+    font-family: 'Spectral SC';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+}
+
+.nav-content {
+    float: right;
+    margin-right: 10%;
+
+    /* height:calc(3em + 4px); */
+}
+
+.nav-content a{
+    color: #fff6e3;
+    text-decoration: none;
+    font-family: 'Spectral SC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    margin: 0 20px 0 20px;
+}
+
+.nav-content a:hover{
+    color: #F9E1B6;
+}
+
+.underline{
+    position: relative;
+}
+
+.underline::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #F9E1B6;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+    .underline:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+    }
+  }
+
+.nav-content li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+
+/*
+ ************* FOOTER
+*/
+footer {
+    background: url('/img/background_black.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    padding: 30px 10%;
+    width: 100%;
+    border-top: 2px solid #F9E1B6;
+}
+
+#footer-left {
+    border-right: 1px solid #F9E1B6;
+    padding-right: 20px;
+}
+
+#footer-right {
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-icons img{
+    padding-left: 15px;
+}
+
+#copyright {
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#copyright a {
+    padding: 0 5px 0 5px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+}
+
+
+/*
+************* HOME 
+*/
+.home-body {
+    background: url('/img/background_black.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.home-section {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 50px 10%;
+}
+
+.home-part-2 {
+    position: relative;
+    max-width: 300px;
+    margin: 20px;
+    display: inline-block;
+    z-index: 1;
+}
+
+#busto {    
+    width: 100%;
+    height: auto;
+}
+
+.home-part-3 {
+    align-self: end;
+}
+
+/*
+************* PERSONAGGIO
+*/
+
+.pg-header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('img/Hypatia-Teaching-Alexandria-watercolour-paper-Robert-Trewick.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.img-right {
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 10px -10px 0 -2px #000000, 10px -10px 0 0 #3B85A4;
+    margin: 0 10px 10px 30px;
+    float: right;
+}
+
+.img-left {
+    max-width: 400px;
+    width: 90%;
+    box-shadow: -10px -10px 0 -2px #fff6e3, -10px -10px 0 0 #3B85A4;
+    margin: 0 30px 10px 10px;
+    float: left;
+}
+
+/* side menu */
+
+.side-menu {
+    width: 150px;
+    position: fixed;
+    top: 40%;
+}
+
+.side-menu ul{
+    text-align: center;
+}
+
+.side-menu li{
+    margin: 0px 0px 45px 30px;
+    list-style: none;
+    transition: transform .6s ease;
+}
+
+.side-menu li:hover {
+    transform: scale(1.1); 
+}
+
+.side-menu img.active{
+    width: calc(45px + 20%);
+    margin-right: 10px;
+}
+
+.red-line {
+    background:#3B85A4;
+    z-index:-1;
+    width:4px;
+    height:85%;
+    position:absolute;
+    left:88px;
+}
+
+ /* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+  /* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #3B85A4;
+    color: #fff6e3;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    left: 250%;
+    margin-left: -60px;
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+  
+  /* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #3B85A4 transparent transparent;
+}
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    transition: .6s ease;
+    opacity: 1;
+}
+
+#fonti {
+    text-align: center;
+}
+.icons {
+    height: 300;
+    margin-top: 20px;
+}
+
+#wikipedia { 
+    float: right;
+}
+
+#corriere {
+    margin-top: 100px;
+}
+
+#restorica {
+    float: left;
+}
+
+.icon {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+/*
+************* CURIOSITA
+*/
+.ct-header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('img/scuola.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 500px;
+}
+
+.img-left-small {
+    box-shadow: -10px -10px 0 -2px #000000, -10px -10px 0 0 #3B85A4;
+    max-width: 300px;
+}
+
+.img-right-small {
+    max-width: 300px;
+}
+
+/*
+************* GALLERY
+*/
+.gr-header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('img/ipazia_2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 500px;
+}
+
+.gallery-img figure{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    padding: 10px;
+    margin: 20px;
+}
+
+.gallery-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+figcaption {
+    color: #fff6e3;
+    font-size: 14px;
+}
