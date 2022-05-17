@@ -1,0 +1,1 @@
+#Progetto di Laboratorio di Comunicazione Visiva, Università degli Studi di Milano - Bicocca
