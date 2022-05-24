@@ -313,7 +313,8 @@ footer {
 }
 
 .home-section {
-    height: 100%;
+    /* height: 100%; */
+    height: calc(100vh - 100px);
     width: 100%;
     position: relative;
     padding: 50px 10%;
@@ -512,17 +513,12 @@ header h1 {
 }
 
 .gallery-img figure{
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
     padding: 10px;
     margin: 20px;
 }
 
 .gallery-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 90%;
 }
 
 figcaption {
