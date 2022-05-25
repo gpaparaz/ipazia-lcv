@@ -320,17 +320,27 @@ footer {
     padding: 50px 10%;
 }
 
+#home-section {
+    height: 100%;
+}
+
+.home-part-1 {
+    align-self: flex-start;
+}
+
 .home-part-2 {
-    position: relative;
-    max-width: 300px;
-    margin: 20px;
-    display: inline-block;
-    z-index: 1;
+    align-self: flex-end;
+    text-align: center;
 }
 
 #busto {    
-    width: 100%;
-    height: auto;
+    /* width: 100%;
+    height: auto; */
+    position: relative;
+    max-width: 80%;
+    margin: 20px;
+    display: inline-block;
+    z-index: 1;
 }
 
 .home-part-3 {
